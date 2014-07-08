@@ -13,25 +13,25 @@
     </p>
     <p>
       <pre>
-        override func drawRect(rect: CGRect) {
-          let context = UIGraphicsGetCurrentContext()
-          if isPlaying {
-            // already playing, so draw a pause icon
-            drawPausePathTo(context, boundedBy: rect)
-          } else {
-            // not playing, draw a play icon
-            drawPlayPathTo(context, boundedBy: rect)
-          }
-        }
-        func drawPlayPathTo(context: CGContextRef, boundedBy rect: CGRect) {
-        }
-        func drawPausePathTo(context: CGContextRef, boundedBy rect: CGRect) {
-        }
+override func drawRect(rect: CGRect) {
+  let context = UIGraphicsGetCurrentContext()
+  if isPlaying {
+    // already playing, so draw a pause icon
+    drawPausePathTo(context, boundedBy: rect)
+  } else {
+    // not playing, draw a play icon
+    drawPlayPathTo(context, boundedBy: rect)
+  }
+}
+func drawPlayPathTo(context: CGContextRef, boundedBy rect: CGRect) {
+}
+func drawPausePathTo(context: CGContextRef, boundedBy rect: CGRect) {
+}
       </pre>
     </p>
     <p>
       <pre>
-        override func drawRect(rect: CGRect) {
+        override superfunc drawRect(rect: CGRect) {
           let context = UIGraphicsGetCurrentContext()
           if isPlaying {
             // already playing, so draw a pause icon
@@ -44,12 +44,12 @@
         func drawPlayPathTo(context: CGContextRef, boundedBy rect: CGRect) {
         }
         func drawPausePathTo(context: CGContextRef, boundedBy rect: CGRect) {
-        }
-      </pre>
+        }</pre>
     </p>
 
-    <div id='labelId'>This is a set where the * symbol is colored.</div>
-
   </div>
+
+
+  <input type="text" id="previewTextField" />
 
 </html>

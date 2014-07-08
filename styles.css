@@ -1,4 +1,4 @@
-* {
+body, h1, h2, h3, h4, h5, h6, p {
   font-family: Helvetica Neue UltraLight, Gill Sans Light, sans-serif;
   font-weight: 100;
 }
@@ -16,7 +16,76 @@ div > p {
 }
 
 div pre {
-  background-color: #222;
   color: #ddd;
   padding: 10px;
+  font-family: Menlo;
+  font-size: 0.85em;
+  font-weight: 100;
+  padding-left: 25px;
+
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+
+/* JS Highlighting Styles */
+
+/* Dark */
+div pre {
+  color: #ddd;
+  background-color: #333;
+}
+.indentation {
+  border-right: 1px solid #333;
+  border-left: 1px solid #555;
+}
+.line {
+}
+.line:hover {
+  background-color: #444499;
+}
+.lineNumber {
+  color: #ddd;
+}
+
+
+/* Light 
+div pre {
+  color: #999;
+  background-color: #ccc;
+}
+.indentation {
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #aaa;
+}
+.line {
+}
+.line:hover {
+  background-color: #bbb;
+}
+.lineNumber {
+  color: #444;
+}
+*/
+
+
+/* Layout */
+.indentation {
+}
+.line {
+  margin: none;
+  padding: none;
+}
+.line:hover {
+  cursor: pointer;
+}
+.lineNumber {
+  margin-right: 10px;
+  width: 2.5em;
+  display: inline-block;
+}
+input {
+  width: 95%;
+  left: 5%;
 }
