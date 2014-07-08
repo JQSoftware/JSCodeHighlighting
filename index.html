@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
     <link rel="stylesheet" href="styles.css" type="text/css">
   </head>
 
-  <div>
+  <div date='070714'>
     <h3>July 7, 2014</h3>
     <p>
       Today I sent an invoice, the first invoice, for PhotoGoo white label deal with Cewe. It was for $7k and I'm really excited because I've never done a licensing deal before. Hopefully it goes well :)
     </p>
+    <p>
+      <pre>
+        override func drawRect(rect: CGRect) {
+          let context = UIGraphicsGetCurrentContext()
+          if isPlaying {
+            // already playing, so draw a pause icon
+            drawPausePathTo(context, boundedBy: rect)
+          } else {
+            // not playing, draw a play icon
+            drawPlayPathTo(context, boundedBy: rect)
+          }
+        }
+        func drawPlayPathTo(context: CGContextRef, boundedBy rect: CGRect) {
+        }
+        func drawPausePathTo(context: CGContextRef, boundedBy rect: CGRect) {
+        }
+      </pre>
+    </p>
+    <p>
+      <pre>
+        override func drawRect(rect: CGRect) {
+          let context = UIGraphicsGetCurrentContext()
+          if isPlaying {
+            // already playing, so draw a pause icon
+            drawPausePathTo(context, boundedBy: rect)
+          } else {
+            // not playing, draw a play icon
+            drawPlayPathTo(context, boundedBy: rect)
+          }
+        }
+        func drawPlayPathTo(context: CGContextRef, boundedBy rect: CGRect) {
+        }
+        func drawPausePathTo(context: CGContextRef, boundedBy rect: CGRect) {
+        }
+      </pre>
+    </p>
+
+    <div id='labelId'>This is a set where the * symbol is colored.</div>
+
   </div>
 
 </html>
